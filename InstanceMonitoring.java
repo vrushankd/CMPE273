@@ -18,9 +18,9 @@ import com.amazonaws.services.cloudwatch.model.GetMetricStatisticsResult;
 public class InstanceMonitoring {
 
     public static void main(String[] args) {
-        final String awsAccessKey = "AKIAIYQ4XOKXEOBJ4EMQ"; //args[0]; //"AKIAI7AB7SJG3PRAY62A"; //"AKIAIYQ4XOKXEOBJ4EMQ";
-        final String awsSecretKey = "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"; //"WsKC5ROW0iBqnvmj18U1UWMdaccy2NUF/R0RWu/P"; //"j8qgn42G921P7eS/MtlpjFm3mJ1uiN04DR06Hl9L";
-        final String instanceId = "i-766e0ab2";
+        final String awsAccessKey = args[0];
+        final String awsSecretKey = args[1];
+        final String instanceId = "i-da054d1e";
         String metricName[] = {"CPUUtilization","NetworkIn","NetworkOut","DiskReadOps","DiskWriteOps","MemoryUtilization"};
         final String nameSpace[] = {"AWS/EC2","AWS/EC2","AWS/EC2","AWS/EC2","AWS/EC2","System/Linux"};
         int i;
@@ -30,7 +30,7 @@ public class InstanceMonitoring {
        
         while(true){
         	StringBuilder sb = new StringBuilder();
-        	final String instanceName = "VM01";
+        	final String instanceName = "cmpe273-Inst1";
             DateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss,SSS");
             Date date = new Date();
             sb.append(instanceName+";"+dateFormat.format(date)+";");
@@ -83,7 +83,7 @@ public class InstanceMonitoring {
     
     private static void appendDatatoLog(String data){
     	try{    		
-    		File file =new File("F:\\Sem3\\273\\test.txt");
+    		File file =new File("\\home\\ubuntu");
     		
     		//if file doesnt exists, then create it
     		if(!file.exists()){
