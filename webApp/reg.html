@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Registration form Template | PrepBootstrap</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" type="text/css" href="bootstrap1/css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="font-awesome/css/font-awesome.min.css" />
+
+    <script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
+    <script type="text/javascript" src="bootstrap1/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+<div class="container">
+
+<div class="page-header">
+    <h1>Registration form <small></small></h1>
+</div>
+
+<!-- Registration form - START -->
+<div class="container">
+    <div class="row">
+        <form role="form" method ="post" action ="hellp.php">
+            <div class="col-lg-6">
+                <div class="form-group">
+                    <label for="InputName">Enter Name</label>
+                    <div class="input-group">
+                        <input type="text" class="form-control" name="InputName" id="InputName" placeholder="Enter Name" required>    
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="InputEmail">Enter Email</label>
+                    <div class="input-group">
+                        <input type="email" class="form-control" id="InputEmailFirst" name="InputEmailFirst" placeholder="Enter Email" required>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="Username">User Name</label>
+                    <div class="input-group">
+                        <input type="text" class="form-control" id="Username" name="Username" placeholder="Username" required>
+                    </div>
+                </div>
+				<div class="form-group">
+                    <label for="password">Password</label>
+                    <div class="input-group">
+                        <input type="password" class="form-control" id="password" name="password" placeholder="********" required>
+                    </div>
+                </div>
+				<div class="form-group">
+                    <label for="AwsAccessKey">AWS Access Key</label>
+                    <div class="input-group">
+                        <input type="text" class="form-control" id="AwsAccessKey" name="AwsAccessKey" placeholder="Key" required>
+                    </div>
+                </div>
+				<div class="form-group">
+                    <label for="AwsSecretKey">AWS Secret Key</label>
+                    <div class="input-group">
+                        <input type="text" class="form-control" id="AwsSecretKey" name="AwsSecretKey" placeholder="Key" required>
+                    </div>
+                </div>
+                <input type="submit" name="submit" id="submit" value="Submit" >
+            </div>
+        </form>
+    </div>
+</div>
+<!-- Registration form - END -->
+
+</div>
+
+</body>
+</html>
